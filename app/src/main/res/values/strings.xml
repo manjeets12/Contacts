@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="add_activity_label">Add Contact</string>
+    <string name="details_activity_label">Contact Details</string>
+    <string name="compose_message_activity_label">Send Message</string>
+
+
+    <string name="edit_overview">Overview</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_otp">OTP</string>
+
+
+    <!-- Toast message in editor when new contact successfully inserted -->
+    <string name="editor_insert_contact_successful">Contact saved</string>
+
+    <!-- Toast message in editor when new contact has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_contact_failed">Error with saving Contact</string>
+
+    <!-- Toast message for successfully sent message -->
+    <string name="message_sent_successful">Successfully Sent Message</string>
+
+    <!-- Toast message when message sent failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="message_sent_failed">sent Message failed</string>
+
+    <string name="empty_view_title_text">No Contacts added...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a pet [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a contact</string>
+
+</resources>

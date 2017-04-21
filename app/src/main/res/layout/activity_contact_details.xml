@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditContactActivity">
+
+    <!-- Input fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <!-- First Name field -->
+        <TextView
+            android:id="@+id/textName"
+            style="@style/DetailTextStyle"
+            android:hint="@string/hint_name"/>
+
+        <!-- Mobile Number field -->
+        <TextView
+            android:id="@+id/textMobile"
+            android:hint="@string/hint_mobile_number"
+            style="@style/DetailTextStyle"/>
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            style="@style/ButtonStyle"
+            android:text="Send Message"/>
+    </LinearLayout>
+</LinearLayout>
+
