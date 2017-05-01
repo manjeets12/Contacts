@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.contacts">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -22,16 +22,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".EditContactActivity" android:label="@string/add_activity_label"/>
-        <activity android:name=".ContactDetailsActivity" android:label="@string/details_activity_label"/>
-        <activity android:name=".ComposeMessgaeActivity" android:label="@string/compose_message_activity_label"></activity>
+        <activity
+            android:name=".EditContactActivity"
+            android:label="@string/add_activity_label" />
+        <activity
+            android:name=".ContactDetailsActivity"
+            android:label="@string/details_activity_label" />
+        <activity
+            android:name=".ComposeMessgaeActivity"
+            android:label="@string/compose_message_activity_label" />
 
         <provider
             android:name=".data.AppProvider"
             android:authorities="com.contacts"
             android:exported="false" />
-
 
     </application>
 

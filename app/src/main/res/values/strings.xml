@@ -32,5 +32,6 @@
 
     <!-- Subtitle text for the empty view that prompts the user to add a pet [CHAR LIMIT=50] -->
     <string name="empty_view_subtitle_text">Get started by adding a contact</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 </resources>
