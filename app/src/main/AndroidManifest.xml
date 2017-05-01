@@ -22,16 +22,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".EditContactActivity"
-            android:label="@string/add_activity_label" />
+            android:label="@string/add_activity_label"
+            android:parentActivityName=".MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".ContactDetailsActivity"
-            android:label="@string/details_activity_label" />
+            android:label="@string/details_activity_label"
+            android:parentActivityName=".MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".ComposeMessgaeActivity"
-            android:label="@string/compose_message_activity_label" />
-
+            android:label="@string/compose_message_activity_label"
+            android:parentActivityName=".ContactDetailsActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ContactDetailsActivity" />
+        </activity>
         <provider
             android:name=".data.AppProvider"
             android:authorities="com.contacts"
